@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
 import phonenumbers
+from flask_cors import CORS
 from phonenumbers import timezone, geocoder, carrier, PhoneNumberType, phonenumberutil
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/track', methods=['GET'])
 def track():
     number = request.args.get('number')
