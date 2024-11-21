@@ -1,3 +1,7 @@
+# Feito por:
+# Gabriel Branco Nº14
+# Martim Filipe Nº23
+
 from flask import Flask, request, jsonify
 import phonenumbers
 from flask_cors import CORS
